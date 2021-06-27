@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduce myself site</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+    <style>
+        button{
+            font-family: 'Roboto', sans-serif;
+            border:1px solid cornflowerblue;
+            background-color: rgb(233, 231, 231);
+            color: black;
+            float: right;
+            width:80px;
+            height:20px;
+            font-size: 15px;
+            border-radius: 5px;
+        }
+        button:hover{
+            background-color: cornflowerblue;
+        }
+        textarea{
+            border:1px solid cornflowerblue;
+            margin-top: 15px;
+            margin-left: 20px;
+        }
+        img{
+            width: 150px;
+            height:150px;
+            margin-top: 30px;
+        }
+        h2{
+            color: rgb(187, 100, 237);
+        }
+        .ins > img{
+            margin-top: 40px;
+            margin-left: 30px;
+        }
+        input{
+            border-radius: 20px;
+            border: 1px solid cornflowerblue;
+            padding:15px;
+            width:300px;
+            font-size: 20px;
+            margin-top: 20px;
+        }
+        .ins, .face, .mail{
+            display: flex;
+            gap:30px;
+        }
+        .write-name1, .write-name2, .write-name3{
+            display: flex;
+            flex-direction: column;
+            margin-top: 30px;
+        }
+        .face{
+            float: right;
+            margin-top: 0px;
+        }
+        .intro{
+            display: flex;
+            flex-direction: column;
+            margin-top: 30px;
+        }
+        .mail{
+            margin-top: 50px;
+            margin-left: 30px;
+        }
+        .both{
+            display: flex;
+            gap: 200px;
+        }
+        .all{
+            display: flex;
+            gap: 200px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="6-20.html">Home</a></li>
+            <li><a href="about me.html">About me</a></li>
+            <li><a href="contact me.html">Contact me</a></li>
+            <li><a href="study.html">Study</a></li>
+        </ul>
+    </nav>
+    <h1 class="first-title">Надтай холбогдох</h1>
+    <div class="both">
+        <div class="ins">
+            <img src="https://www.edigitalagency.com.au/wp-content/uploads/instagram-logo-svg-vector-for-print.svg" alt="">
+            <div class="write-name1">
+                <h2>Dari anu</h2>
+                <input class="instagram" type="text">
+            </div>
+        </div>
+        <div class="face">
+            <img src="https://befc.com.au/wp-content/uploads/2019/07/2-21918_download-transparent-background-facebook-logo-clipart-facebook-logo-300x300.jpg" alt="">
+            <div class="write-name2">
+                <h2>Dari anu</h2>
+                <input class="facebook" type="text">
+            </div>
+        </div>
+    </div>
+    <div class="all">
+        <div class="mail">
+            <img src="https://image.similarpng.com/very-thumbnail/2020/12/Gmail-logo-design-on-transparent-background-PNG.png" alt="">
+            <div class="write-name3">
+                <h2>nyamanudari@gmai.com</h2>
+                <input class="gmail"type="text">
+            </div>
+        </div>
+        <div class="intro">
+            <input type="text">
+            <input type="text">
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+            <button>Submit</button>
+        </div>
+    </div>
+</body>
+</html>
