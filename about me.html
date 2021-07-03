@@ -9,6 +9,9 @@
 <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
     <style>
+        img{
+            object-fit:contain;
+        }
         .first-img > img{
             width:300px;
             height:200px;
@@ -45,11 +48,46 @@
             padding: 20px;
             margin-top: 40px;
             margin-right: 30px;
+            float: right;
+            color: black;
         }
         hr{
             border:0.2px solid cornflowerblue;
             width: 1200px;
             height: 1px;
+        }
+        .first-img, .second-img, .third-img, .forth-img{
+            display: flex;
+            width: 70%;
+            margin: auto;
+        }
+        .wallpaper-2{
+            background-image: url("https://i.pinimg.com/originals/78/5d/61/785d61b39847585ac7125cafad824a83.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            width:100%;
+            height: fit-content;
+        }
+        @media (max-width:700px){
+            img{
+                margin: auto;
+            }
+            h3{
+                width:40ch;
+                margin: auto;
+            }
+            .first-img{
+                flex-direction: column;
+            }
+            .second-img{
+                flex-direction: column;
+            }
+            .third-img{
+                flex-direction: column;
+            }
+            .forth-img{
+                flex-direction: column;
+            }
         }
     </style>
 </head>
@@ -61,8 +99,13 @@
             <li><a href="contact me.html">Contact me</a></li>
             <li><a href="study.html">Study</a></li>
         </ul>
+        <div class="hamburger">
+            <div class="line"></div>
+        </div>
     </nav>
     <h1 class="first-title">Танилцуулга-Миний тухай</h1>
+    <div class="wallpaper-2">
+        <div class="abme">
     <div class="first-img">
         <img src="https://previews.123rf.com/images/aratehortua/aratehortua1712/aratehortua171201067/91855614-set-of-vector-cartoon-junk-food-isolated-on-white-background.jpg" alt="">
         <h3>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore vel dicta et quasi sed animi sequi. Harum sapiente placeat amet voluptas, laboriosam doloribus eaque animi quibusdam! Corporis officia consequatur vero!</h3>

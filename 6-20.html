@@ -15,15 +15,38 @@
             color: rgb(59, 59, 87);
             font-size: 50px;
             margin-top: 0px;
+            padding-top: 15px;
         }
         .profile{
             margin: auto;
             width:70%;
             display: flex;
+            background-image: url("https://wallpaperaccess.com/full/84248.png");
+            background-repeat: no-repeat;
         }
         h3{
             padding: 20px;
             word-spacing: 5px;
+        }
+        .wallpaper{
+            background-image: url("https://wallpaperaccess.com/full/84248.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: fit-content;
+        }
+        @media (max-width:900px){
+            .profile img{
+                width:250px;
+                height: 350px;
+                margin: auto;
+            }
+            .profile{
+                flex-direction: column;
+            }
+            h3{
+                width:40ch;
+                margin: auto;
+            }
         }
     </style>
 </head>
@@ -35,8 +58,12 @@
             <li><a href="contact me.html">Contact me</a></li>
             <li><a href="study.html">Study</a></li>
         </ul>
+        <div class="hamburger">
+            <div class="line"></div>
+        </div>
     </nav>
     <h1 class="first-title">Нүүр</h1>
+    <div class="wallpaper">
     <h1 class='second-title'>Welcome To My Site</h1>
     <div class="profile">
         <img src="https://i.pinimg.com/736x/be/df/6c/bedf6cff125ecc4f134e31a0e6ed1dcf.jpg" alt="">
