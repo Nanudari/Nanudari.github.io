@@ -3,6 +3,10 @@
 }
 nav{
     background-color: cornflowerblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
 }
 body{
     margin: 0;
@@ -11,7 +15,7 @@ ul{
     margin: 0;
     padding: 0;
     list-style-type: none;
-    display: flex;
+    display: none;
     justify-content: center;
     gap: 40px;
 }
@@ -35,8 +39,9 @@ a{
 .first-title{
     margin: 0;
     padding-left: 20px;
-    margin-top: 20px;
+    margin-top: 10px;
     color: darkblue;
+    margin-bottom: 10px;
 }
 li::after{
     content: "";
@@ -48,4 +53,44 @@ li::after{
 }
 li:hover::after{
     width: 100%;
+}
+.hamburger{
+    width: 60px;
+    height: 40px;
+    position: absolute;
+    right: 20px;
+    display: flex;
+    align-items: center;
+}
+.hamburger::before{
+    content: "";
+    background-color: black;
+    width:100%;
+    height: 20%;
+    position: absolute;
+    top: 0;
+}
+.hamburger::after{
+    content: "";
+    background-color: black;
+    width: 100%;
+    height: 20%;
+    position: absolute;
+    bottom: 0;
+}
+.hamburger .line{
+    width: 100%;
+    height: 20%;
+    background-color: black;
+}
+@media (min-width: 600px){
+    .hamburger{
+        display: none;
+    }
+    nav{
+        justify-content: center;
+    }
+    nav ul{
+        display: flex;
+    }
 }
