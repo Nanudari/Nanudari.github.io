@@ -31,12 +31,24 @@
             border:1px solid cornflowerblue;
             margin-top: 15px;
             margin-left: 20px;
+            resize: none;
         }
         img{
             width: 120px;
             height:120px;
             margin-top: 30px;
             object-fit: contain;
+        }
+        input{
+            border-radius: 40px;
+            width:300px;
+            height:50px;
+            padding:20px;
+            border:1px solid cornflowerblue;
+            gap:20px;
+            font-size: 20px;
+            font-family: 'Roboto', sans-serif;
+            margin-top: 20px;
         }
         h2{
             color: rgb(187, 100, 237);
@@ -106,6 +118,8 @@
                 margin: auto;
                 gap: 30px;
             }
+        }
+        @media (max-width:800px){
             .both{
                 flex-direction: column;
                 margin: auto;
@@ -116,6 +130,12 @@
             }
             .intro{
                 margin-left: 30px;
+            }
+            .ins > img{
+                margin-left: 30px;
+            }
+            .last1{
+                margin-left: 20px;
             }
         }
     </style>
@@ -158,9 +178,12 @@
                     <input class="gmail"type="text">
                 </div>
             </div>
-            <div class="intro">
+        </div
+        <div class="intro">
+            <div class="last1">
                 <input placeholder="Овог:">
                 <input placeholder="Нэр:">
+            </div>
                 <div class="last">
                     <textarea name="" id="" cols="40" rows="10"></textarea>
                     <button>Submit</button>
